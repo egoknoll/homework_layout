@@ -6,9 +6,116 @@
     font-family:"Raleway";
     src: url(/fonts/Raleway.ttf);
 }
+@media (max-device-width:320px){
+    .section-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-about__footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
 *{
     margin: 0;
     padding: 0;
+}
+.section-social{
+    margin: 0 auto;
+    position: relative;
+    height: 140px;
+    max-width: 1510px;
+    background: #F8EFEF;
+}
+.section-social__title{
+    position: absolute;
+    left: 170px;
+    width: 470px;
+    height: 60px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #333333;
+}
+.section-social__subtitle{
+    position: absolute;
+    left: 170px;
+    top: 80px;
+    width: 470px;
+    height: 42px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #86878B;
+}
+.section-social__icon-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    left: 670px;
+    top: 45px;
+    cursor: pointer;
+}
+.section-social__icon-container:hover{
+    opacity: 65%;
+}
+.section-social__facebook-icon{
+    fill: #CCCCCC;
+    margin-right: 55.67px;
+}
+.section-social__facebook-icon:hover{
+    fill: #3b5998;
+}
+.section-social__twitter-icon{
+    fill: #CCCCCC;
+    margin-right: 45.6px;
+}
+.section-social__twitter-icon:hover{
+    fill: #1d9bf0;
+}
+.section-social__linkedin-icon{
+    fill: #CCCCCC;
+    margin-right: 44.58px;
+}
+.section-social__linkedin-icon:hover{
+    fill: #010101;
+}
+.section-social__pinterest-icon{
+    fill: #CCCCCC;
+    margin-right: 44.57px;
+}
+.section-social__pinterest-icon:hover{
+    fill: #cc0000;
+}
+.section-social__instagram-icon{
+    fill: #CCCCCC;
+    margin-right: 44.72px;
+}
+.section-social__instagram-icon:hover{
+    fill: #000000;
+}
+.section-social__github-icon{
+    fill: #CCCCCC;
+    margin-right: 47.5px;
+}
+.section-social__github-icon:hover{
+    fill: #24292f;
+}
+.section-social__rss-icon{
+    fill: #CCCCCC;
+}
+.section-social__rss-icon:hover{
+    fill: #f76300;
 }
 .section-tabs{
     margin-top: 99px;
