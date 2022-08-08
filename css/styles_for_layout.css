@@ -9,13 +9,15 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1510px;
 }
 .section-social{
-    margin: 0 auto;
-    position: relative;
-    height: 140px;
     background: #F8EFEF;
+}
+.section-social__container{
+    margin: 0 auto;
+    width: 1540px;
+    height: 140px;
+    position: relative;
 }
 .section-social__title{
     position: absolute;
@@ -56,47 +58,44 @@
     top: 45px;
     cursor: pointer;
 }
+.section-social__icon-cell{
+    margin-right: 45px;
+}
 .section-social__icon-container:hover{
     opacity: 65%;
 }
 .section-social__facebook-icon{
     fill: #CCCCCC;
-    margin-right: 55.67px;
 }
 .section-social__facebook-icon:hover{
     fill: #3b5998;
 }
 .section-social__twitter-icon{
     fill: #CCCCCC;
-    margin-right: 45.6px;
 }
 .section-social__twitter-icon:hover{
     fill: #1d9bf0;
 }
 .section-social__linkedin-icon{
     fill: #CCCCCC;
-    margin-right: 44.58px;
 }
 .section-social__linkedin-icon:hover{
     fill: #010101;
 }
 .section-social__pinterest-icon{
     fill: #CCCCCC;
-    margin-right: 44.57px;
 }
 .section-social__pinterest-icon:hover{
     fill: #cc0000;
 }
 .section-social__instagram-icon{
     fill: #CCCCCC;
-    margin-right: 44.72px;
 }
 .section-social__instagram-icon:hover{
     fill: #000000;
 }
 .section-social__github-icon{
     fill: #CCCCCC;
-    margin-right: 47.5px;
 }
 .section-social__github-icon:hover{
     fill: #24292f;
@@ -224,7 +223,7 @@
     padding: 50px;
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     display: flex;
