@@ -9,13 +9,15 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1510px;
 }
 .section-social{
+}
+.section-social__container{
     margin: 0 auto;
-    position: relative;
+    width: 1508px;
     height: 140px;
     background: #F8EFEF;
+    position: relative;
 }
 .section-social__title{
     position: absolute;
@@ -52,6 +54,8 @@
     flex-direction: row;
     position: absolute;
     align-items: center;
+    justify-content: space-between;
+    width: 666px;
     left: 670px;
     top: 45px;
     cursor: pointer;
@@ -61,42 +65,36 @@
 }
 .section-social__facebook-icon{
     fill: #CCCCCC;
-    margin-right: 55.67px;
 }
 .section-social__facebook-icon:hover{
     fill: #3b5998;
 }
 .section-social__twitter-icon{
     fill: #CCCCCC;
-    margin-right: 45.6px;
 }
 .section-social__twitter-icon:hover{
     fill: #1d9bf0;
 }
 .section-social__linkedin-icon{
     fill: #CCCCCC;
-    margin-right: 44.58px;
 }
 .section-social__linkedin-icon:hover{
     fill: #010101;
 }
 .section-social__pinterest-icon{
     fill: #CCCCCC;
-    margin-right: 44.57px;
 }
 .section-social__pinterest-icon:hover{
     fill: #cc0000;
 }
 .section-social__instagram-icon{
     fill: #CCCCCC;
-    margin-right: 44.72px;
 }
 .section-social__instagram-icon:hover{
     fill: #000000;
 }
 .section-social__github-icon{
     fill: #CCCCCC;
-    margin-right: 47.5px;
 }
 .section-social__github-icon:hover{
     fill: #24292f;
@@ -198,6 +196,7 @@
     width: 1170px;
     height: 501px;
     border: 1px solid #C6CBCD;
+    display: none;
 }
 .section-tabs__title{
     width: 570px;
@@ -224,7 +223,7 @@
     padding: 50px;
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     display: flex;
@@ -264,6 +263,13 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    width: 470px;
+    height: 500px;
+}
+#hidden-radio-first-item:checked ~ .section-tabs__panels #section-tabs-first-panel,
+#hidden-radio-second-item:checked ~ .section-tabs__panels #section-tabs-second-panel,
+#hidden-radio-third-item:checked ~ .section-tabs__panels #section-tabs-third-panel{
+    display: block;
 }
 .section-about{
     margin-top: 50px;
@@ -362,4 +368,142 @@ div.section-about__footer-content h5{
     line-height: 21px;
     text-align: center;
     color: #000000;
+}
+.section-pricing{
+    margin-top: 60px;
+}
+.section-pricing__container{
+    margin: 0 auto;
+    width: 1508px;
+    height: 900px;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    position: relative;
+}
+.section-pricing__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.section-pricing__header-title{
+    margin-top: 50px;
+    width: 1170px;
+    height: 150px;
+    position: relative;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.section-pricing__header-subtitle{
+    margin-top: 40px;
+    width: 1170px;
+    height: 21px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+.section-pricing__header-title::after{
+    position: absolute;
+    bottom: 10px;
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+}
+.section-pricing__prices-container{
+    width: 1170px;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 170px;
+}
+.section-pricing__prices{
+    width: 370px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-pricing__prices:hover{
+    align-self: baseline;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    cursor: pointer;
+}
+.section-pricing__prices-title{
+    width: 100%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.section-pricing__prices-bucks{
+    width: 100%;
+    height: 100px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 2px solid #F5F5F5;
+}
+.section-pricing__prices-content{
+    width: 100%;
+    height: 50px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #86878B;
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;
+}
+.section-pricing__prices-free{
+    width: 100%;
+    height: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.5);
 }
