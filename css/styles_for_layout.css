@@ -517,3 +517,188 @@ div.section-about__footer-content h5{
     background-color: #333333;
     color: rgba(255, 255, 255, 0.5);
 }
+@media (max-width : 1024px) {
+    .section-social{
+    }
+    .section-social__container{
+        width: 1024px;
+        height: 105px;
+    }
+    .section-social__title{
+        left: 16px;
+        width: 402px;
+        height: 45px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .section-social__subtitle{
+        left: 16px;
+        top: 60px;
+        width: 402px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section-social__icon-container{
+        width: 580px;
+        left: 438px;
+        top: 30px;
+    }
+    .section-social__icon-cell{
+    }
+    .section-tabs{
+        margin-top: 50px;
+    }
+    .section-tabs__container{
+        max-width: 992px;
+        width: 992px;
+    }
+    .section-tabs__tabs{
+        display: flex;
+        width: 992px;
+        height: 40px;
+        position: relative;
+    }
+    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab,
+    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab,
+    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab{
+        width: 172px;
+    }
+    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab::after,
+    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab::after,
+    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab::after{
+        width: 172px;
+    }
+    .section-tabs__first-tab{
+        width: 156px;
+    }
+    .section-tabs__second-tab{    
+        width: 156px;
+    }
+    .section-tabs__third-tab{    
+        width: 156px;
+    }
+    .section-tabs__content{
+        width: 992px;
+        height: 386px;
+    }
+    .section-tabs__title{
+        width: 483px;
+        height: 89px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .section-tabs__lorem-text{
+        width: 483px;
+        height: 112px;
+        top: 127px;
+        left: 100px;
+        padding: 3px;
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+    }
+    .section-tabs__button{
+        width: 232px;
+        height: 58px;
+        left: 100px;
+        bottom: 50px;
+    }
+    .section-tabs__content > img{
+        width: 398px;
+        height: 385px;
+    }
+    .section-about__container{
+        max-width: 992px;
+        width: 992px;
+    }
+    .section-about__header-title{
+        height: 120px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-about__header-separator{
+        width: 142px;
+    }
+    .section-about__header-subtitle{
+        height: 21px;
+        margin-top: 32px;
+        margin-bottom: 65px;
+        font-size: 14px;
+        line-height: 16px; 
+    }
+    .section-about__icon-container{
+        width: 170px;
+        height: 170px;
+    }
+    .section-about__footer{
+        justify-content: space-between;
+    }
+    .section-about__footer-content{
+        width: 318px;
+        height: 310px;
+        margin-right: none;
+    }
+    div.section-about__footer-content h4{
+        width: 318px;
+        height: 82px;
+        margin-bottom: 14px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    div.section-about__footer-content h5{
+        height: 64px;
+        padding-left: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+    }
+    div.section-about__footer-content img{
+        width: 147px;
+        height: 147px;
+    }
+    .section-pricing__container{
+        width: 1024px;
+        height: 770px;
+    }
+    .section-pricing__header{
+        margin-bottom: 50px;
+    }
+    .section-pricing__header-title{
+        width: 992px;
+        height: 120px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-pricing__header-subtitle{
+        margin-top: 32px;
+        width: 982px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section-pricing__header-title::after{
+        width: 143px;
+    }
+    .section-pricing__prices-container{
+        width: 992px;
+        height: 540px;
+        left: 14px;
+    }
+    .section-pricing__prices{
+        width: 317px;
+        height: 453px;
+    }
+    .section-pricing__prices-title{
+        height: 53px;
+    }
+    .section-pricing__prices-bucks{
+        height: 88px;
+    }
+    .section-pricing__prices-content{
+        height: 44px;
+    }
+    .section-pricing__prices-free{
+        height: 44px;
+    }
+}
