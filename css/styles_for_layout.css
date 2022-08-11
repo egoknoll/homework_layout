@@ -11,12 +11,19 @@
     padding: 0;
 }
 .section-social{
+
 }
 .section-social__container{
     margin: 0 auto;
     width: 1508px;
     height: 140px;
     background: #F8EFEF;
+    position: relative;
+}
+.section-social__container{
+    margin: 0 auto;
+    width: 1540px;
+    height: 140px;
     position: relative;
 }
 .section-social__title{
@@ -59,6 +66,9 @@
     left: 670px;
     top: 45px;
     cursor: pointer;
+}
+.section-social__icon-cell{
+    margin-right: 45px;
 }
 .section-social__icon-container:hover{
     opacity: 65%;
