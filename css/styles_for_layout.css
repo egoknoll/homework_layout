@@ -509,7 +509,140 @@ div.section-about__footer-content h5{
     background-color: #333333;
     color: rgba(255, 255, 255, 0.5);
 }
-@media (max-width : 1024px) {
+.section-reviews{
+    margin-top: 50px;
+    width: 1508px;
+}
+.section-reviews__container{
+    margin: 0 auto;
+    width: 1170px;
+}
+.section-reviews__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-reviews__header-title{
+    height: 150px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;    
+    color: #000000;
+    position: relative;
+}
+.section-reviews__header-title::after{
+    position: absolute;
+    bottom: 10px;
+    left: calc(100%/3);
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+}
+.section-reviews__header-subtitle{
+    margin-top: 40px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+.section-reviews__text-bubbles{
+    display: flex;
+    justify-content: center;
+    margin-top: 83px;
+}
+.section-reviews__qoutes{
+    width: 370px;
+    height: 180px;
+    margin-right: 30px;
+    padding-left: 15px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #86878B;
+    position: relative;
+}
+.section-reviews__qoutes::after{
+    content: '';
+    width: 30px;
+    height: 20px;
+    transform: rotate(-180deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: #E2E2E2;
+    position: absolute;
+    bottom: -20px;
+    left: 70px;
+    display: block;
+}
+.section-reviews__employees-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 66px;
+}
+.section-reviews__employees{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+}
+.section-reviews__employees > img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.section-reviews__employees-names{
+    height: 54px;
+    margin-left: 100px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+.section-reviews__employess-positions{
+    width: 270px;
+    margin-left: 100px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    color: #000000;
+}
+@media(max-width : 1024px) {
     .section-social{
     }
     .section-social__container{
