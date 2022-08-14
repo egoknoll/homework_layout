@@ -377,7 +377,7 @@ div.section-about__footer-content h5{
 .section-pricing__container{
     margin: 0 auto;
     width: 1508px;
-    height: 900px;
+    min-height: 900px;
     background: #F5F5F5;
     box-sizing: border-box;
     position: relative;
@@ -511,11 +511,12 @@ div.section-about__footer-content h5{
 }
 .section-reviews{
     margin-top: 50px;
-    width: 1508px;
+    max-width: 1508px;
+    margin: 0 auto;
 }
 .section-reviews__container{
     margin: 0 auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 .section-reviews__header{
     width: 100%;
@@ -566,7 +567,7 @@ div.section-about__footer-content h5{
 }
 .section-reviews__qoutes{
     width: 370px;
-    height: 180px;
+    min-height: 180px;
     margin-right: 30px;
     padding-left: 15px;
     background: #E2E2E2;
@@ -827,6 +828,71 @@ div.section-about__footer-content h5{
     .section-pricing__prices-free{
         height: 44px;
     }
+    .section-reviews{
+        max-width: 1024px;
+    }
+    .section-reviews__container{
+        margin: 0 auto;
+        max-width: 992px;
+    }
+    .section-reviews__header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-reviews__header-title{
+        min-height: 120px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-reviews__header-title::after{
+        width: 142px;
+    }
+    .section-reviews__header-subtitle{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section-reviews__text-bubbles{
+        display: flex;
+        justify-content: center;
+        margin-top: 83px;
+    }
+    .section-reviews__qoutes{
+        max-width: 317px;
+        min-height: 180px;
+        margin-right: 20px;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section-reviews__qoutes::after{
+        width: 25.7px;
+        height: 20px;
+    }
+    .section-reviews__employees-container{
+
+    }
+    .section-reviews__employees{
+        width: 317px;
+    }
+    .section-reviews__employees > img{
+        width: 63px;
+        height: 63px;
+    }
+    .section-reviews__employees-names{
+        height: 36px;
+        margin-left: 85px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .section-reviews__employess-positions{
+        width: 231px;
+        margin-left: 95px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 @media (max-width : 320px) {
     .section-social{
@@ -1024,4 +1090,54 @@ div.section-about__footer-content h5{
         font-size: 14px;
         line-height: 16px;
     }
+    .section-reviews{
+        max-width: 320px;
+    }
+    .section-reviews__container{
+        margin: 0 auto;
+        max-width: 288px;
+    }
+    .section-reviews__header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-reviews__header-title::after{
+        width: 134px;
+        left: 77px;
+    }
+    .section-reviews__text-bubbles{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 1.5em;
+    }
+    .section-reviews__qoutes{
+        max-width: 100%;
+        min-height: 180px;
+        margin-right: 0;
+    }
+    .section-reviews__employees-container{
+        flex-wrap: wrap;
+    }
+    .section-reviews__employees{
+        width: 317px;
+    }
+    .section-reviews__employees > img{
+        width: 63px;
+        height: 63px;
+    }
+    .section-reviews__employees-names{
+        height: 36px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .section-reviews__employess-positions{
+        margin-left: 95px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
 }
