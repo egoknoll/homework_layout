@@ -15,16 +15,15 @@
 }
 .section-social__container{
     margin: 0 auto;
-    width: 1510px;
     max-width: 1510px;
     height: 140px;
     background: #F8EFEF;
     position: relative;
 }
 .section-social__title{
-    margin-left: 11.25%;
-    width: 31.12%;
-    height: 60px;
+    margin-left: 11.25vw;
+    max-width: 31.12vw;
+    min-height: 60px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -36,10 +35,10 @@
     color: #333333;
 }
 .section-social__subtitle{
-    margin-left: 11.25%;
+    margin-left: 11.25vw;
     top: 80px;
-    width: 470px;
-    height: 42px;
+    max-width: 31vw;
+    min-height: 42px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -59,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     width: 45.03%;
-    left: 44.37%;
+    left: 44.37vw;
     top: 45px;
     cursor: pointer;
 }
@@ -116,13 +115,12 @@
 .section-tabs__container{
     box-sizing: border-box;
     max-width: 1170px;
-    width: 1170px;
     margin: 0 auto;
     position: relative;
 }
 .section-tabs__tabs{
     display: flex;
-    width: 1170px;
+    max-width: 1170px;
     height: 40px;
     position: relative;
 }
@@ -198,17 +196,17 @@
 .section-tabs__content{
     box-sizing: border-box;
     position: relative;
-    width: 1170px;
-    height: 501px;
+    max-width: 1170px;
+    min-height: 501px;
     border: 1px solid #C6CBCD;
     display: none;
 }
 .section-tabs__title{
-    width: 570px;
-    height: 124px;
+    max-width: 570px;
+    min-height: 124px;
     position: absolute;
     top: 1px;
-    left: 100px;
+    left: 8.54vw;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -219,13 +217,13 @@
     color: #000000;
 }
 .section-tabs__lorem-text{
-    width: 570px;
-    height: 210px;
+    max-width: 570px;
+    min-height: 210px;
     position: absolute;
     top: 101px;
-    left: 50px;
+    left: 4.27vw;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 4.27vw;
     font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
@@ -238,10 +236,10 @@
 }
 .section-tabs__button{
     width: 270px;
-    height: 58px;
+    min-height: 58px;
     position: absolute;
-    left: 100px;
-    bottom: 54px;
+    left: 8.54vw;
+    bottom: 50px;
     cursor: pointer;
     font-family: "Open Sans";
     font-style: normal;
@@ -280,7 +278,6 @@
 .section-about__container{
     box-sizing: border-box;
     max-width: 1170px;
-    width: 1170px;
     margin: 0 auto;
 }
 .section-about__header{
@@ -337,14 +334,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 370px;
+    max-width: 370px;
     height: 383px;
 }
 div.section-about__footer-content h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 369px;
+    max-width: 369px;
     height: 100px;
     margin-bottom: 8px;
     text-align: center;
@@ -362,6 +359,7 @@ div.section-about__footer-content h5{
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    max-width: 369px;
     padding-left: 5px;
     font-family: "Raleway";
     font-style: normal;
@@ -376,7 +374,7 @@ div.section-about__footer-content h5{
 }
 .section-pricing__container{
     margin: 0 auto;
-    width: 1508px;
+    max-width: 1508px;
     min-height: 900px;
     background: #F5F5F5;
     box-sizing: border-box;
@@ -390,7 +388,7 @@ div.section-about__footer-content h5{
 }
 .section-pricing__header-title{
     margin-top: 50px;
-    width: 1170px;
+    max-width: 1170px;
     height: 150px;
     position: relative;
     font-family: "Raleway";
@@ -407,7 +405,7 @@ div.section-about__footer-content h5{
 }
 .section-pricing__header-subtitle{
     margin-top: 40px;
-    width: 1170px;
+    max-width: 1170px;
     height: 21px;
     font-family: "Raleway";
     font-style: normal;
@@ -429,17 +427,22 @@ div.section-about__footer-content h5{
     height: 1px;
     background-color: #EC7979;
 }
+.section-pricing__footer{
+    max-width: 1508px;
+    display: flex;
+    justify-content: center;
+}
 .section-pricing__prices-container{
-    width: 1170px;
+    max-width: 1170px;
+    width: 77.58vw;
     height: 540px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 170px;
 }
 .section-pricing__prices{
-    width: 370px;
+    width: 24.53vw;
+    max-width: 370px;
     height: 510px;
     display: flex;
     flex-direction: column;
@@ -451,8 +454,9 @@ div.section-about__footer-content h5{
     cursor: pointer;
 }
 .section-pricing__prices-title{
-    width: 100%;
-    height: 60px;
+    width: 24.53vw;
+    max-width: 370px;
+    min-height: 60px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -465,7 +469,8 @@ div.section-about__footer-content h5{
     color: #FFFFFF;
 }
 .section-pricing__prices-bucks{
-    width: 100%;
+    width: 24.53vw;
+    max-width: 370px;
     height: 100px;
     font-family: "Raleway";
     font-style: normal;
@@ -480,7 +485,8 @@ div.section-about__footer-content h5{
     border: 2px solid #F5F5F5;
 }
 .section-pricing__prices-content{
-    width: 100%;
+    width: 24.53vw;
+    max-width: 370px;
     height: 50px;
     font-family: "Raleway";
     font-style: normal;
@@ -496,7 +502,8 @@ div.section-about__footer-content h5{
     border: 2px solid #F5F5F5;
 }
 .section-pricing__prices-free{
-    width: 100%;
+    width: 24.53vw;
+    max-width: 370px;
     height: 50px;
     font-family: 'Raleway';
     font-style: normal;
@@ -566,10 +573,10 @@ div.section-about__footer-content h5{
     margin-top: 83px;
 }
 .section-reviews__qoutes{
-    width: 370px;
+    max-width: 370px;
     min-height: 180px;
     margin-right: 30px;
-    padding-left: 15px;
+    padding: 0 7px;
     background: #E2E2E2;
     border-radius: 10px;
     font-family: "Raleway";
@@ -597,17 +604,18 @@ div.section-about__footer-content h5{
     display: block;
 }
 .section-reviews__employees-container{
+    max-width: 1170px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 5vw;
     margin-top: 66px;
 }
 .section-reviews__employees{
-    width: 370px;
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-left: 30px;
 }
 .section-reviews__employees > img{
     width: 70px;
@@ -617,8 +625,8 @@ div.section-about__footer-content h5{
     top: 0px;
 }
 .section-reviews__employees-names{
-    height: 54px;
-    margin-left: 100px;
+    min-height: 54px;
+    margin-left: 6.63vw;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -631,15 +639,15 @@ div.section-about__footer-content h5{
     color: #000000;
 }
 .section-reviews__employess-positions{
-    width: 270px;
-    margin-left: 100px;
+    max-width: 270px;
+    margin-left: 6.63vw;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     display: flex;
-    align-self: flex-end;
+    align-self: flex-start;
     align-items: center;
     color: #000000;
 }
@@ -647,27 +655,27 @@ div.section-about__footer-content h5{
     .section-social{
     }
     .section-social__container{
-        width: 1024px;
-        height: 105px;
+        max-width: 1024px;
+        min-height: 105px;
     }
     .section-social__title{
-        margin-left: 1.56%;
-        width: 402px;
+        margin-left: 1.56vw;
+        max-width: 402px;
         height: 45px;
         font-size: 18px;
         line-height: 25px;
     }
     .section-social__subtitle{
-        margin-left: 1.56%;
+        margin-left: 1.56vw;
         top: 60px;
-        width: 402px;
-        height: 32px;
+        max-width: 39.25vw;
+        min-height: 32px;
         font-size: 14px;
         line-height: 16px;
     }
     .section-social__icon-container{
-        width: 500px;
-        left: 438px;
+        max-width: 500px;
+        left: 42.77vw;
         top: 30px;
     }
     .section-social__icon-cell{
@@ -678,13 +686,18 @@ div.section-about__footer-content h5{
     }
     .section-tabs__container{
         max-width: 992px;
-        width: 992px;
     }
     .section-tabs__tabs{
         display: flex;
-        width: 992px;
+        max-width: 992px;
         height: 40px;
         position: relative;
+    }
+    .section-tabs__panels{
+        max-width: 992px;
+    }
+    .section-tabs__content{
+        max-width: 992px;
     }
     #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab,
     #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab,
@@ -706,20 +719,21 @@ div.section-about__footer-content h5{
         width: 156px;
     }
     .section-tabs__content{
-        width: 992px;
+        max-width: 992px;
         height: 386px;
     }
     .section-tabs__title{
-        width: 483px;
+        max-width: 47.16vw;
+        left: 9.76vw;
         height: 89px;
         font-size: 24px;
         line-height: 33px;
     }
     .section-tabs__lorem-text{
-        width: 483px;
+        max-width: 47.16vw;
         height: 112px;
         top: 127px;
-        left: 100px;
+        left: 9.76vw;
         padding: 3px;
         font-size: 14px;
         line-height: 16px;
@@ -732,12 +746,11 @@ div.section-about__footer-content h5{
         bottom: 50px;
     }
     .section-tabs__content > img{
-        width: 398px;
+        width: 38.86vw;
         height: 385px;
     }
     .section-about__container{
         max-width: 992px;
-        width: 992px;
     }
     .section-about__header-title{
         height: 120px;
@@ -755,25 +768,27 @@ div.section-about__footer-content h5{
         line-height: 16px; 
     }
     .section-about__icon-container{
-        width: 170px;
+        max-width: 170px;
         height: 170px;
     }
     .section-about__footer{
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .section-about__footer-content{
-        width: 318px;
+        max-width: 318px;
         height: 310px;
         margin-right: none;
     }
     div.section-about__footer-content h4{
-        width: 318px;
+        max-width: 318px;
         height: 82px;
         margin-bottom: 14px;
         font-size: 18px;
         line-height: 25px;
     }
     div.section-about__footer-content h5{
+        max-width: 318px;
         height: 64px;
         padding-left: 4px;
         font-size: 14px;
@@ -781,25 +796,25 @@ div.section-about__footer-content h5{
         overflow: hidden;
     }
     div.section-about__footer-content img{
-        width: 147px;
+        max-width: 147px;
         height: 147px;
     }
     .section-pricing__container{
-        width: 1024px;
+        max-width: 1024px;
         height: 770px;
     }
     .section-pricing__header{
         margin-bottom: 50px;
     }
     .section-pricing__header-title{
-        width: 992px;
+        max-width: 992px;
         height: 120px;
         font-size: 24px;
         line-height: 28px;
     }
     .section-pricing__header-subtitle{
         margin-top: 32px;
-        width: 982px;
+        max-width: 982px;
         height: 16px;
         font-size: 14px;
         line-height: 16px;
@@ -808,12 +823,12 @@ div.section-about__footer-content h5{
         width: 143px;
     }
     .section-pricing__prices-container{
-        width: 992px;
+        max-width: 992px;
         height: 540px;
         left: 14px;
     }
     .section-pricing__prices{
-        width: 317px;
+        max-width: 317px;
         height: 453px;
     }
     .section-pricing__prices-title{
@@ -871,35 +886,36 @@ div.section-about__footer-content h5{
         height: 20px;
     }
     .section-reviews__employees-container{
-
+        max-width: 992px;
     }
     .section-reviews__employees{
-        width: 317px;
+        max-width: 317px;
     }
     .section-reviews__employees > img{
-        width: 63px;
+        max-width: 63px;
         height: 63px;
     }
     .section-reviews__employees-names{
+        max-width: 231px;
         height: 36px;
         margin-left: 85px;
         font-size: 18px;
         line-height: 25px;
     }
     .section-reviews__employess-positions{
-        width: 231px;
+        max-width: 231px;
         margin-left: 95px;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
     }
 }
-@media (max-width : 320px) {
+@media (max-width : 428px) {
     .section-social{
     }
     .section-social__container{
-        width: 320px;
-        height: 239px;
+        max-width: 320px;
+        min-height: 239px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -918,8 +934,8 @@ div.section-about__footer-content h5{
         margin-left: none;
         margin-top: 13px;
         display: flex;
-        width: 271px;
-        height: 48px;
+        max-width: 271px;
+        min-height: 48px;
         font-size: 14px;
         line-height: 16px;
     }
@@ -974,11 +990,13 @@ div.section-about__footer-content h5{
     .section-tabs__title{
         left: 25px;
         width: 242.74px;
+        max-width: 100%;
         height: 112px;
         font-size: 18px;
         line-height: 25px;
     }
     .section-tabs__lorem-text{
+        max-width: 100%;
         width: 242.74px;
         height: 180px;
         top: 141px;
@@ -1039,8 +1057,8 @@ div.section-about__footer-content h5{
         height: 147px;
     }
     .section-pricing__container{
-        width: 320px;
-        height: 1480px;
+        max-width: 320px;
+        min-height: 1480px;
     }
     .section-pricing__header{
         margin-bottom: 50px;
@@ -1066,32 +1084,40 @@ div.section-about__footer-content h5{
         left: 14px;
         flex-wrap: wrap;
     }
+    .section-pricing__prices-container{
+        width: 288px;
+    }
     .section-pricing__prices{
         width: 288px;
         height: 400px;
     }
     .section-pricing__prices-title{
+        width: 288px;
         height: 47px;
         font-size: 18px;
         line-height: 25px;
     }
     .section-pricing__prices-bucks{
+        width: 288px;
         height: 78px;
         font-size: 24px;
         line-height: 28px;
     }
     .section-pricing__prices-content{
+        width: 288px;
         height: 39px;
         font-size: 14px;
         line-height: 16px;
     }
     .section-pricing__prices-free{
+        width: 288px;
         height: 39px;
         font-size: 14px;
         line-height: 16px;
     }
     .section-reviews{
         max-width: 320px;
+        margin-top: 50px;
     }
     .section-reviews__container{
         margin: 0 auto;
