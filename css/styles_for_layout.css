@@ -12,17 +12,21 @@
 }
 .section-social{
     margin: 0 auto;
+    background: #F8EFEF;
 }
 .section-social__container{
     margin: 0 auto;
-    max-width: 1510px;
+    max-width: 1170px;
+    padding: 0 15px;
     height: 140px;
-    background: #F8EFEF;
+    display: flex;
     position: relative;
 }
+.section-social__text-container{
+    max-width: 470px;
+    margin-right: 50px;
+}
 .section-social__title{
-    margin-left: 11.25vw;
-    max-width: 31.12vw;
     min-height: 60px;
     font-family: "Open Sans";
     font-style: normal;
@@ -35,9 +39,6 @@
     color: #333333;
 }
 .section-social__subtitle{
-    margin-left: 11.25vw;
-    top: 80px;
-    max-width: 31vw;
     min-height: 42px;
     font-family: 'Raleway';
     font-style: normal;
@@ -52,14 +53,11 @@
     display: none;
 }
 .section-social__icon-container{
-    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 45.03%;
-    left: 44.37vw;
-    top: 45px;
+    width: 45vw;
     cursor: pointer;
 }
 .section-social__icon-cell{
@@ -371,6 +369,7 @@ div.section-about__footer-content h5{
 }
 .section-pricing{
     margin-top: 60px;
+    background: #F5F5F5;
 }
 .section-pricing__container{
     margin: 0 auto;
@@ -520,6 +519,7 @@ div.section-about__footer-content h5{
     margin-top: 50px;
     max-width: 1508px;
     margin: 0 auto;
+    margin-bottom: 64px;
 }
 .hidden-radio-2{
     display: none;
@@ -551,7 +551,7 @@ div.section-about__footer-content h5{
 .section-reviews__header-title::after{
     position: absolute;
     bottom: 10px;
-    left: calc(100%/3);
+    left: calc(100%/2.8);
     content: '';
     display: block;
     width: 170px;
@@ -915,6 +915,13 @@ div.section-about__footer-content h5{
 @media (max-width : 428px) {
     .section-social{
     }
+    .section-social__text-container{
+        margin-right: 0;
+    }
+    .section-social__container{
+        flex-direction: column;
+        align-items: center;
+    }
     .section-social__container{
         max-width: 320px;
         min-height: 239px;
@@ -924,7 +931,7 @@ div.section-about__footer-content h5{
     }
     .section-social__title{
         margin-top: 31px;
-        margin-left: none;
+        margin-left: 0;
         width: 287px;
         height: 45px;
         font-size: 18px;
@@ -933,7 +940,7 @@ div.section-about__footer-content h5{
         justify-content: center;
     }
     .section-social__subtitle{
-        margin-left: none;
+        margin-left: 0;
         margin-top: 13px;
         display: flex;
         max-width: 271px;
@@ -946,7 +953,6 @@ div.section-about__footer-content h5{
     }
     .section-social__icon-container{
         width: 284px;
-        left: 16px;
         top: 150px;
         justify-content: space-between;
     }
