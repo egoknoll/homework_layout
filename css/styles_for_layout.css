@@ -172,6 +172,13 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+}
+.banner__button-2:hover{
+    background: #AB4949;
+}
+.banner__button-2:active{
+    background: #EC7979;
 }
 .social{
     margin: 0 auto;
