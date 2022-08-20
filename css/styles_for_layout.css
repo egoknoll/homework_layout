@@ -10,11 +10,11 @@
     margin: 0;
     padding: 0;
 }
-.section-social{
+.social{
     margin: 0 auto;
     background: #F8EFEF;
 }
-.section-social__container{
+.social__container{
     margin: 0 auto;
     max-width: 1170px;
     padding: 0 15px;
@@ -22,11 +22,11 @@
     display: flex;
     position: relative;
 }
-.section-social__text-container{
+.social__text-container{
     max-width: 470px;
     margin-right: 50px;
 }
-.section-social__title{
+.social__title{
     min-height: 60px;
     font-family: "Open Sans";
     font-style: normal;
@@ -38,7 +38,7 @@
     text-transform: capitalize;
     color: #333333;
 }
-.section-social__subtitle{
+.social__subtitle{
     min-height: 42px;
     font-family: 'Raleway';
     font-style: normal;
@@ -49,10 +49,10 @@
     align-items: center;
     color: #86878B;
 }
-.section-social__subtitle br:first-child{
+.social__subtitle br:first-child{
     display: none;
 }
-.section-social__icon-container{
+.social__icon-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,63 +60,63 @@
     width: 45vw;
     cursor: pointer;
 }
-.section-social__icon-cell{
+.social__icon-cell{
 }
-.section-social__icon-container:hover{
+.social__icon-container:hover{
     opacity: 65%;
 }
-.section-social__facebook-icon{
+.social__facebook-icon{
     fill: #CCCCCC;
 }
-.section-social__facebook-icon:hover{
+.social__facebook-icon:hover{
     fill: #3b5998;
 }
-.section-social__twitter-icon{
+.social__twitter-icon{
     fill: #CCCCCC;
 }
-.section-social__twitter-icon:hover{
+.social__twitter-icon:hover{
     fill: #1d9bf0;
 }
-.section-social__linkedin-icon{
+.social__linkedin-icon{
     fill: #CCCCCC;
 }
-.section-social__linkedin-icon:hover{
+.social__linkedin-icon:hover{
     fill: #010101;
 }
-.section-social__pinterest-icon{
+.social__pinterest-icon{
     fill: #CCCCCC;
 }
-.section-social__pinterest-icon:hover{
+.social__pinterest-icon:hover{
     fill: #cc0000;
 }
-.section-social__instagram-icon{
+.social__instagram-icon{
     fill: #CCCCCC;
 }
-.section-social__instagram-icon:hover{
+.social__instagram-icon:hover{
     fill: #000000;
 }
-.section-social__github-icon{
+.social__github-icon{
     fill: #CCCCCC;
 }
-.section-social__github-icon:hover{
+.social__github-icon:hover{
     fill: #24292f;
 }
-.section-social__rss-icon{
+.social__rss-icon{
     fill: #CCCCCC;
 }
-.section-social__rss-icon:hover{
+.social__rss-icon:hover{
     fill: #f76300;
 }
-.section-tabs{
+.tabs{
     margin-top: 99px;
 }
-.section-tabs__container{
+.tabs__container{
     box-sizing: border-box;
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
 }
-.section-tabs__tabs{
+.tabs__tabs{
     display: flex;
     max-width: 1170px;
     height: 40px;
@@ -125,28 +125,28 @@
 .hidden-radio{
     display: none;
 }
-#hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab,
-#hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab,
-#hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab{
+#hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab,
+#hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab,
+#hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab{
     border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     border-bottom: none;
     width: 203px;
     position: relative;
 }
-#hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab::after,
-#hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab::after,
-#hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab::after{
+#hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab::after,
+#hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab::after,
+#hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab::after{
     content: '';
     display: block;
     position: absolute;
     z-index: 1;
     top: 35px;
     width: 203px;
-    height: 10px;
+    height: 5px;
     background-color: white;
 }
-.section-tabs__first-tab{
+.tabs__first-tab{
     width: 184px;
     height: 40px;
     display: flex;
@@ -161,7 +161,7 @@
     color: #333333;
     cursor: pointer;
 }
-.section-tabs__second-tab{    
+.tabs__second-tab{    
     width: 184px;
     height: 40px;
     display: flex;
@@ -176,7 +176,7 @@
     color: #333333;
     cursor: pointer;
 }
-.section-tabs__third-tab{    
+.tabs__third-tab{    
     width: 184px;
     height: 40px;
     display: flex;
@@ -191,7 +191,7 @@
     color: #333333;
     cursor: pointer;
 }
-.section-tabs__content{
+.tabs__content{
     box-sizing: border-box;
     position: relative;
     max-width: 1170px;
@@ -199,7 +199,7 @@
     border: 1px solid #C6CBCD;
     display: none;
 }
-.section-tabs__title{
+.tabs__title{
     max-width: 570px;
     min-height: 124px;
     position: absolute;
@@ -214,7 +214,7 @@
     align-items: center;
     color: #000000;
 }
-.section-tabs__lorem-text{
+.tabs__lorem-text{
     max-width: 570px;
     min-height: 210px;
     position: absolute;
@@ -232,12 +232,12 @@
     align-items: center;
     color: #000000;
 }
-.section-tabs__button{
+.tabs__button{
     width: 270px;
     min-height: 58px;
     position: absolute;
     left: 8.54vw;
-    bottom: 50px;
+    bottom: 45px;
     cursor: pointer;
     font-family: "Open Sans";
     font-style: normal;
@@ -253,37 +253,37 @@
     background: #EC7979;
     border: none;
 }
-.section-tabs__button:hover{
+.tabs__button:hover{
     background: #AB4949;
 }
-.section-tabs__button:active{
+.tabs__button:active{
     background: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
-.section-tabs__content > img{
+.tabs__content > img{
     float: right;
     width: 470px;
     height: 500px;
 }
-#hidden-radio-first-item:checked ~ .section-tabs__panels #section-tabs-first-panel,
-#hidden-radio-second-item:checked ~ .section-tabs__panels #section-tabs-second-panel,
-#hidden-radio-third-item:checked ~ .section-tabs__panels #section-tabs-third-panel{
+#hidden-radio-first-item:checked ~ .tabs__panels #tabs-first-panel,
+#hidden-radio-second-item:checked ~ .tabs__panels #tabs-second-panel,
+#hidden-radio-third-item:checked ~ .tabs__panels #tabs-third-panel{
     display: block;
 }
-.section-about{
+.about{
     margin-top: 50px;
 }
-.section-about__container{
+.about__container{
     box-sizing: border-box;
     max-width: 1170px;
     margin: 0 auto;
 }
-.section-about__header{
+.about__header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section-about__header-title{
+.about__header-title{
     display: flex;
     align-items: center;
     height: 150px;
@@ -295,13 +295,13 @@
     display: flex;
     color: #000000;
 }
-.section-about__header-separator{
+.about__header-separator{
     width: 170px;
     height: 0px;
     border: 1px solid #EC7979;
     border-top: 0px;
 }
-.section-about__header-subtitle{
+.about__header-subtitle{
     display: flex;
     align-items: center;
     height: 21px;
@@ -315,27 +315,27 @@
     text-align: center;
     color: #86878B;    
 }
-.section-about__icon-container{
+.about__icon-container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
     height: 170px;
 }
-.section-about__footer{
+.about__footer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.section-about__footer-content{
+.about__footer-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 370px;
     height: 383px;
 }
-div.section-about__footer-content h4{
+div.about__footer-content h4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +353,7 @@ div.section-about__footer-content h4{
     text-transform: capitalize;
     color: #000000;
 }
-div.section-about__footer-content h5{
+div.about__footer-content h5{
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -367,11 +367,11 @@ div.section-about__footer-content h5{
     text-align: center;
     color: #000000;
 }
-.section-pricing{
+.pricing{
     margin-top: 60px;
     background: #F5F5F5;
 }
-.section-pricing__container{
+.pricing__container{
     margin: 0 auto;
     max-width: 1508px;
     min-height: 900px;
@@ -379,13 +379,13 @@ div.section-about__footer-content h5{
     box-sizing: border-box;
     position: relative;
 }
-.section-pricing__header{
+.pricing__header{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 75px;
 }
-.section-pricing__header-title{
+.pricing__header-title{
     margin-top: 50px;
     max-width: 1170px;
     height: 150px;
@@ -402,7 +402,7 @@ div.section-about__footer-content h5{
     text-transform: uppercase;
     color: #000000;
 }
-.section-pricing__header-subtitle{
+.pricing__header-subtitle{
     margin-top: 40px;
     max-width: 1170px;
     height: 21px;
@@ -417,7 +417,7 @@ div.section-about__footer-content h5{
     text-align: center;
     color: #86878B;
 }
-.section-pricing__header-title::after{
+.pricing__header-title::after{
     position: absolute;
     bottom: 10px;
     content: '';
@@ -426,12 +426,12 @@ div.section-about__footer-content h5{
     height: 1px;
     background-color: #EC7979;
 }
-.section-pricing__footer{
+.pricing__footer{
     max-width: 1508px;
     display: flex;
     justify-content: center;
 }
-.section-pricing__prices-container{
+.pricing__prices-container{
     max-width: 1170px;
     width: 77.58vw;
     height: 540px;
@@ -439,7 +439,7 @@ div.section-about__footer-content h5{
     justify-content: space-between;
     align-items: center;
 }
-.section-pricing__prices{
+.pricing__prices{
     width: 24.53vw;
     max-width: 370px;
     height: 510px;
@@ -447,12 +447,12 @@ div.section-about__footer-content h5{
     flex-direction: column;
     align-items: center;
 }
-.section-pricing__prices:hover{
+.pricing__prices:hover{
     align-self: baseline;
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
     cursor: pointer;
 }
-.section-pricing__prices-title{
+.pricing__prices-title{
     width: 24.53vw;
     max-width: 370px;
     min-height: 60px;
@@ -467,7 +467,7 @@ div.section-about__footer-content h5{
     background-color: #333333;
     color: #FFFFFF;
 }
-.section-pricing__prices-bucks{
+.pricing__prices-bucks{
     width: 24.53vw;
     max-width: 370px;
     height: 100px;
@@ -483,7 +483,7 @@ div.section-about__footer-content h5{
     color: #FFFFFF;
     border: 2px solid #F5F5F5;
 }
-.section-pricing__prices-content{
+.pricing__prices-content{
     width: 24.53vw;
     max-width: 370px;
     height: 50px;
@@ -500,7 +500,7 @@ div.section-about__footer-content h5{
     background: #FFFFFF;
     border: 2px solid #F5F5F5;
 }
-.section-pricing__prices-free{
+.pricing__prices-free{
     width: 24.53vw;
     max-width: 370px;
     height: 50px;
@@ -515,7 +515,7 @@ div.section-about__footer-content h5{
     background-color: #333333;
     color: rgba(255, 255, 255, 0.5);
 }
-.section-reviews{
+.reviews{
     margin-top: 50px;
     max-width: 1508px;
     margin: 0 auto;
@@ -524,17 +524,17 @@ div.section-about__footer-content h5{
 .hidden-radio-2{
     display: none;
 }
-.section-reviews__container{
+.reviews__container{
     margin: 0 auto;
     max-width: 1170px;
 }
-.section-reviews__header{
+.reviews__header{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section-reviews__header-title{
+.reviews__header-title{
     height: 150px;
     font-family: "Raleway";
     font-style: normal;
@@ -548,7 +548,7 @@ div.section-about__footer-content h5{
     color: #000000;
     position: relative;
 }
-.section-reviews__header-title::after{
+.reviews__header-title::after{
     position: absolute;
     bottom: 10px;
     left: calc(100%/2.8);
@@ -558,7 +558,7 @@ div.section-about__footer-content h5{
     height: 1px;
     background-color: #EC7979;
 }
-.section-reviews__header-subtitle{
+.reviews__header-subtitle{
     margin-top: 40px;
     font-family: "Raleway";
     font-style: normal;
@@ -570,12 +570,12 @@ div.section-about__footer-content h5{
     text-align: center;
     color: #86878B;
 }
-.section-reviews__text-bubbles{
+.reviews__text-bubbles{
     display: flex;
     justify-content: center;
     margin-top: 83px;
 }
-.section-reviews__qoutes{
+.reviews__qoutes{
     max-width: 370px;
     min-height: 180px;
     margin-right: 30px;
@@ -594,7 +594,7 @@ div.section-about__footer-content h5{
     color: #86878B;
     position: relative;
 }
-.section-reviews__qoutes::after{
+.reviews__qoutes::after{
     content: '';
     width: 30px;
     height: 20px;
@@ -606,27 +606,27 @@ div.section-about__footer-content h5{
     left: 70px;
     display: block;
 }
-.section-reviews__employees-container{
+.reviews__employees-container{
     max-width: 1170px;
     display: flex;
     justify-content: space-around;
     margin-top: 66px;
 }
-.section-reviews__employees{
+.reviews__employees{
     max-width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
-.section-reviews__employees > img{
+.reviews__employees > img{
     width: 70px;
     height: 70px;
     position: absolute;
     left: 0px;
     top: 0px;
 }
-.section-reviews__employees-names{
+.reviews__employees-names{
     min-height: 54px;
     margin-left: 6.63vw;
     font-family: "Open Sans";
@@ -640,7 +640,7 @@ div.section-about__footer-content h5{
     text-transform: capitalize;
     color: #000000;
 }
-.section-reviews__employess-positions{
+.reviews__employess-positions{
     max-width: 270px;
     margin-left: 6.63vw;
     font-family: "Raleway";
@@ -653,21 +653,228 @@ div.section-about__footer-content h5{
     align-items: center;
     color: #000000;
 }
+.banner-2{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    min-height: 442px;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+}
+.banner-2::after{
+    content: '';
+    display: block;
+    min-height: 442px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-image: url("/images/from_above.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-2__container{
+    max-width: 1170px;
+    min-height: 442px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-2__header{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-2__header-title{
+    max-width: 100%;
+    min-height: 150px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+.banner-2__header-title::after{
+    content: '';
+    bottom: 10px;
+    left: calc(50% - 85px);
+    position: absolute;
+    width: 170px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+.banner-2__header-subtitle{
+    max-width: 100%;
+    min-height: 21px;
+    margin-top: 40px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner-2__button{
+    width: 370px;
+    height: 51px;
+    margin-top: 75px;
+    border: 2px solid #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;    
+}
+.banner-2__button:hover{
+    border: 2px solid #EC7979;
+    color: #EC7979;
+}
+.banner-2__button:active{
+    border: 2px solid #AB4949;
+    background: #AB4949;
+    color: #FFFFFF;
+}
+.contact{
+    margin: 0 auto;
+}
+.contact__container{
+    margin: 0 auto;
+    max-width: 1170px;
+    min-height: 662px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__header{
+    max-width: 100%;
+}
+.contact__header-title{
+    max-width: 100%;
+    min-height: 150px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+}
+.contact__header-title::after{
+    content: '';
+    bottom: 10px;
+    left: calc(50% - 85px);
+    position: absolute;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+}
+.contact__header-subtitle{
+    max-width: 100%;
+    min-height: 40px;
+    margin-top: 40px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+.contact__input-container{
+    max-width: 1170px;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contact__input{
+    width: 45%;
+    max-width: 570px;
+    min-height: 40px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #BDBDBD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.contact__input-container textarea{
+    position: absolute;
+    top: 13px;
+    left: 47%;
+}
+.contact__button{
+    width: 370px;
+    height: 58px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    cursor: pointer;
+}
+.contact__button:hover{
+    background-color: #AB4949;;
+}
+.contact__button:active{
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
 @media(max-width : 1024px) {
-    .section-social{
+    .social{
     }
-    .section-social__container{
+    .social__container{
         max-width: 1024px;
         min-height: 105px;
     }
-    .section-social__title{
+    .social__title{
         margin-left: 1.56vw;
         max-width: 402px;
         height: 45px;
         font-size: 18px;
         line-height: 25px;
     }
-    .section-social__subtitle{
+    .social__subtitle{
         margin-left: 1.56vw;
         top: 60px;
         max-width: 39.25vw;
@@ -675,63 +882,63 @@ div.section-about__footer-content h5{
         font-size: 14px;
         line-height: 16px;
     }
-    .section-social__icon-container{
+    .social__icon-container{
         max-width: 500px;
         left: 42.77vw;
         top: 30px;
     }
-    .section-social__icon-cell{
+    .social__icon-cell{
         transform: scale(65%);
     }
-    .section-tabs{
+    .tabs{
         margin-top: 50px;
     }
-    .section-tabs__container{
+    .tabs__container{
         max-width: 992px;
     }
-    .section-tabs__tabs{
+    .tabs__tabs{
         display: flex;
         max-width: 992px;
         height: 40px;
         position: relative;
     }
-    .section-tabs__panels{
+    .tabs__panels{
         max-width: 992px;
     }
-    .section-tabs__content{
+    .tabs__content{
         max-width: 992px;
     }
-    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab,
-    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab,
-    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab{
+    #hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab,
+    #hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab,
+    #hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab{
         width: 172px;
     }
-    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab::after,
-    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab::after,
-    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab::after{
+    #hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab::after,
+    #hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab::after,
+    #hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab::after{
         width: 172px;
     }
-    .section-tabs__first-tab{
+    .tabs__first-tab{
         width: 156px;
     }
-    .section-tabs__second-tab{    
+    .tabs__second-tab{    
         width: 156px;
     }
-    .section-tabs__third-tab{    
+    .tabs__third-tab{    
         width: 156px;
     }
-    .section-tabs__content{
+    .tabs__content{
         max-width: 992px;
         height: 386px;
     }
-    .section-tabs__title{
+    .tabs__title{
         max-width: 47.16vw;
         left: 9.76vw;
         height: 89px;
         font-size: 24px;
         line-height: 33px;
     }
-    .section-tabs__lorem-text{
+    .tabs__lorem-text{
         max-width: 47.16vw;
         height: 112px;
         top: 127px;
@@ -741,55 +948,54 @@ div.section-about__footer-content h5{
         line-height: 16px;
         overflow: hidden;
     }
-    .section-tabs__button{
+    .tabs__button{
         width: 232px;
         height: 58px;
         left: 100px;
         bottom: 50px;
     }
-    .section-tabs__content > img{
+    .tabs__content > img{
         width: 38.86vw;
         height: 385px;
     }
-    .section-about__container{
+    .about__container{
         max-width: 992px;
     }
-    .section-about__header-title{
+    .about__header-title{
         height: 120px;
         font-size: 24px;
         line-height: 28px;
     }
-    .section-about__header-separator{
+    .about__header-separator{
         width: 142px;
     }
-    .section-about__header-subtitle{
+    .about__header-subtitle{
         height: 21px;
         margin-top: 32px;
         margin-bottom: 65px;
         font-size: 14px;
         line-height: 16px; 
     }
-    .section-about__icon-container{
+    .about__icon-container{
         max-width: 170px;
         height: 170px;
     }
-    .section-about__footer{
+    .about__footer{
         justify-content: space-between;
-        flex-wrap: wrap;
     }
-    .section-about__footer-content{
+    .about__footer-content{
         max-width: 318px;
         height: 310px;
         margin-right: none;
     }
-    div.section-about__footer-content h4{
+    div.about__footer-content h4{
         max-width: 318px;
         height: 82px;
         margin-bottom: 14px;
         font-size: 18px;
         line-height: 25px;
     }
-    div.section-about__footer-content h5{
+    div.about__footer-content h5{
         max-width: 318px;
         height: 64px;
         padding-left: 4px;
@@ -797,85 +1003,85 @@ div.section-about__footer-content h5{
         line-height: 16px;
         overflow: hidden;
     }
-    div.section-about__footer-content img{
+    div.about__footer-content img{
         max-width: 147px;
         height: 147px;
     }
-    .section-pricing__container{
+    .pricing__container{
         max-width: 1024px;
         height: 770px;
     }
-    .section-pricing__header{
+    .pricing__header{
         margin-bottom: 50px;
     }
-    .section-pricing__header-title{
+    .pricing__header-title{
         max-width: 992px;
         height: 120px;
         font-size: 24px;
         line-height: 28px;
     }
-    .section-pricing__header-subtitle{
+    .pricing__header-subtitle{
         margin-top: 32px;
         max-width: 982px;
         height: 16px;
         font-size: 14px;
         line-height: 16px;
     }
-    .section-pricing__header-title::after{
+    .pricing__header-title::after{
         width: 143px;
     }
-    .section-pricing__prices-container{
+    .pricing__prices-container{
         max-width: 992px;
         height: 540px;
         left: 14px;
     }
-    .section-pricing__prices{
+    .pricing__prices{
         max-width: 317px;
         height: 453px;
     }
-    .section-pricing__prices-title{
+    .pricing__prices-title{
         height: 53px;
     }
-    .section-pricing__prices-bucks{
+    .pricing__prices-bucks{
         height: 88px;
     }
-    .section-pricing__prices-content{
+    .pricing__prices-content{
         height: 44px;
     }
-    .section-pricing__prices-free{
+    .pricing__prices-free{
         height: 44px;
     }
-    .section-reviews{
+    .reviews{
         max-width: 1024px;
     }
-    .section-reviews__container{
+    .reviews__container{
         margin: 0 auto;
         max-width: 992px;
     }
-    .section-reviews__header{
+    .reviews__header{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-reviews__header-title{
+    .reviews__header-title{
         min-height: 120px;
         font-size: 24px;
         line-height: 28px;
     }
-    .section-reviews__header-title::after{
+    .reviews__header-title::after{
         width: 142px;
     }
-    .section-reviews__header-subtitle{
+    .reviews__header-subtitle{
         font-size: 14px;
         line-height: 16px;
     }
-    .section-reviews__text-bubbles{
+    .reviews__text-bubbles{
         display: flex;
         justify-content: center;
         margin-top: 83px;
     }
-    .section-reviews__qoutes{
+    .reviews__qoutes{
         max-width: 317px;
         min-height: 180px;
         margin-right: 20px;
@@ -883,53 +1089,118 @@ div.section-about__footer-content h5{
         font-size: 14px;
         line-height: 16px;
     }
-    .section-reviews__qoutes::after{
+    .reviews__qoutes::after{
         width: 25.7px;
         height: 20px;
     }
-    .section-reviews__employees-container{
+    .reviews__employees-container{
         max-width: 992px;
     }
-    .section-reviews__employees{
+    .reviews__employees{
         max-width: 317px;
     }
-    .section-reviews__employees > img{
+    .reviews__employees > img{
         max-width: 63px;
         height: 63px;
     }
-    .section-reviews__employees-names{
+    .reviews__employees-names{
         max-width: 231px;
         height: 36px;
         margin-left: 85px;
         font-size: 18px;
         line-height: 25px;
     }
-    .section-reviews__employess-positions{
+    .reviews__employess-positions{
         max-width: 231px;
         margin-left: 95px;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
     }
+    .banner-2__container{
+        max-width: 992px;
+        min-height: 338px;
+    }
+    .banner-2__header{
+        max-width: 992px;
+    }
+    .banner-2__header-title{
+        min-height: 120px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .banner-2__header-title::after{
+        left: calc(50% - 70px);
+        width: 140px;
+    }
+    .banner-2__header-subtitle{
+        min-height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .banner-2__button{
+        width: 318px;
+        height: 58px; 
+    }
+    .banner-2__button:hover{
+        border: 2px solid #EC7979;
+        color: #EC7979;
+    }
+    .banner-2__button:active{
+        border: 2px solid #AB4949;
+        background: #AB4949;
+        color: #FFFFFF;
+    }
+    .contact__container{
+        max-width: 992px;
+        min-height: 562px;
+    }
+    .contact__header-title{
+        min-height: 120px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contact__header-title::after{
+        left: calc(50% - 70px);
+        width: 140px;
+    }
+    .contact__header-subtitle{
+        font-size: 14px;
+        line-height: 16px;
+        line-height: 21px;
+    }
+    .contact__input-container{
+        max-width: 992px;
+    }
+    .contact__input{
+        max-width: 486px;
+        min-height: 40px;
+    }
+    .contact__input-container textarea{
+        position: absolute;
+    }
+    .contact__button{
+        width: 318px;
+    }
 }
 @media (max-width : 428px) {
-    .section-social{
+    .social{
     }
-    .section-social__text-container{
+    .social__text-container{
         margin-right: 0;
     }
-    .section-social__container{
+    .social__container{
         flex-direction: column;
         align-items: center;
     }
-    .section-social__container{
+    .social__container{
         max-width: 320px;
         min-height: 239px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-social__title{
+    .social__title{
         margin-top: 31px;
         margin-left: 0;
         width: 287px;
@@ -939,7 +1210,7 @@ div.section-about__footer-content h5{
         text-align: center;
         justify-content: center;
     }
-    .section-social__subtitle{
+    .social__subtitle{
         margin-left: 0;
         margin-top: 13px;
         display: flex;
@@ -947,55 +1218,56 @@ div.section-about__footer-content h5{
         min-height: 48px;
         font-size: 14px;
         line-height: 16px;
+        text-align: center;
     }
-    .section-social__subtitle br:first-child{
+    .social__subtitle br:first-child{
         display: inline;
     }
-    .section-social__icon-container{
+    .social__icon-container{
         width: 284px;
         top: 150px;
         justify-content: space-between;
     }
-    .section-social__icon-cell{
+    .social__icon-cell{
         transform: scale(45%);
     }
-    .section-tabs{
+    .tabs{
         margin-top: 50px;
     }
-    .section-tabs__container{
+    .tabs__container{
         max-width: 288px;
         width: 288px;
     }
-    .section-tabs__tabs{
+    .tabs__tabs{
         display: flex;
         width: 288px;
         height: 40px;
         position: relative;
     }
-    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab,
-    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab,
-    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab{
+    #hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab,
+    #hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab,
+    #hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab{
         width: 100px;
     }
-    #hidden-radio-first-item:checked ~ .section-tabs__tabs .section-tabs__first-tab::after,
-    #hidden-radio-second-item:checked ~ .section-tabs__tabs .section-tabs__second-tab::after,
-    #hidden-radio-third-item:checked ~ .section-tabs__tabs .section-tabs__third-tab::after{
+    #hidden-radio-first-item:checked ~ .tabs__tabs .tabs__first-tab::after,
+    #hidden-radio-second-item:checked ~ .tabs__tabs .tabs__second-tab::after,
+    #hidden-radio-third-item:checked ~ .tabs__tabs .tabs__third-tab::after{
         width: 100px;
     }
-    .section-tabs__first-tab{
+    .tabs__first-tab{
         width: 93px;
     }
-    .section-tabs__second-tab{    
+    .tabs__second-tab{    
         width: 93px;
     }
-    .section-tabs__third-tab{    
+    .tabs__third-tab{    
         width: 93px;
     }
-    .section-tabs__content{
+    .tabs__content{
         width: 288px;
         height: 431px;
     }
-    .section-tabs__title{
+    .tabs__title{
         left: 25px;
         width: 242.74px;
         max-width: 100%;
@@ -1003,7 +1275,7 @@ div.section-about__footer-content h5{
         font-size: 18px;
         line-height: 25px;
     }
-    .section-tabs__lorem-text{
+    .tabs__lorem-text{
         max-width: 100%;
         width: 242.74px;
         height: 180px;
@@ -1014,181 +1286,180 @@ div.section-about__footer-content h5{
         line-height: 16px;
         overflow: hidden;
     }
-    .section-tabs__button{
+    .tabs__button{
         width: 242px;
         height: 74px;
         left: 25px;
         bottom: 30px;
     }
-    .section-tabs__content > img{
+    .tabs__content > img{
         width: 398px;
         height: 385px;
         display: none;
     }
-    .section-about__container{
+    .about__container{
         max-width: 288px;
         width: 288px;
     }
-    .section-about__header-title{
+    .about__header-title{
         height: 120px;
         font-size: 18px;
         line-height: 21px;
     }
-    .section-about__header-separator{
+    .about__header-separator{
         width: 134px;
     }
-    .section-about__header-subtitle{
+    .about__header-subtitle{
         height: 21px;
         margin-top: 32px;
         margin-bottom: 65px;
         font-size: 13px;
         line-height: 15px;
     }
-    .section-about__icon-container{
+    .about__icon-container{
         width: 170px;
         height: 170px;
     }
-    .section-about__footer{
+    .about__footer{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .section-about__footer-content{
+    .about__footer-content{
         width: 288px;
         height: 318px;
         margin-right: none;
     }
-    div.section-about__footer-content h4{
+    div.about__footer-content h4{
         width: 100%;
     }
-    div.section-about__footer-content img{
+    div.about__footer-content img{
         width: 147px;
         height: 147px;
     }
-    .section-pricing__container{
+    .pricing__container{
         max-width: 320px;
         min-height: 1480px;
     }
-    .section-pricing__header{
+    .pricing__header{
         margin-bottom: 50px;
     }
-    .section-pricing__header-title{
+    .pricing__header-title{
         width: 288px;
         font-size: 24px;
         line-height: 28px;
     }
-    .section-pricing__header-subtitle{
+    .pricing__header-subtitle{
         margin-top: 32px;
         width: 288px;
         height: 32px;
         font-size: 14px;
         line-height: 16px
     }
-    .section-pricing__header-title::after{
+    .pricing__header-title::after{
         width: 134px;
     }
-    .section-pricing__prices-container{
+    .pricing__prices-container{
         width: 288px;
-        height: 1233px;
         left: 14px;
         flex-wrap: wrap;
     }
-    .section-pricing__prices-container{
+    .pricing__prices-container{
         width: 288px;
     }
-    .section-pricing__prices{
+    .pricing__prices{
         width: 288px;
         height: 400px;
     }
-    .section-pricing__prices-title{
+    .pricing__prices-title{
         width: 288px;
         height: 47px;
         font-size: 18px;
         line-height: 25px;
     }
-    .section-pricing__prices-bucks{
+    .pricing__prices-bucks{
         width: 288px;
         height: 78px;
         font-size: 24px;
         line-height: 28px;
     }
-    .section-pricing__prices-content{
+    .pricing__prices-content{
         width: 288px;
         height: 39px;
         font-size: 14px;
         line-height: 16px;
     }
-    .section-pricing__prices-free{
+    .pricing__prices-free{
         width: 288px;
         height: 39px;
         font-size: 14px;
         line-height: 16px;
     }
-    .section-reviews{
+    .reviews{
         max-width: 320px;
         margin-top: 50px;
     }
-    .section-reviews__container{
+    .reviews__container{
         margin: 0 auto;
         max-width: 288px;
     }
-    .section-reviews__header{
+    .reviews__header{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-reviews__header-title::after{
+    .reviews__header-title::after{
         width: 134px;
         left: 77px;
     }
-    .section-reviews__text-bubbles{
+    .reviews__text-bubbles{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 1.5em;
     }
-    .section-reviews__qoutes{
+    .reviews__qoutes{
         display: none;
         max-width: 100%;
         min-height: 180px;
         margin-right: 0;
     }
-    .section-reviews__employees-container{
+    .reviews__employees-container{
         flex-wrap: wrap;
     }
-    .section-reviews__employees{
+    .reviews__employees{
         width: 317px;
         display: none;
         left: 20px;
     }
-    .section-reviews__employees > img{
+    .reviews__employees > img{
         width: 63px;
         height: 63px;
     }
-    .section-reviews__employees-names{
+    .reviews__employees-names{
         height: 36px;
         font-size: 14px;
         line-height: 19px;
     }
-    .section-reviews__employess-positions{
+    .reviews__employess-positions{
         margin-left: 95px;
         font-weight: 400;
         font-size: 13px;
         line-height: 15px;
     }
-    .section-reviews__dots{
+    .reviews__dots{
         position: relative;
         left: 76px;
         top: 30px;
     }
-    .section-reviews__first-dot{
+    .reviews__first-dot{
         position: absolute;
         width: 10px;
         height: 10px;
         border-radius: 5px;
         border: 1px solid #86878B;
     }
-    .section-reviews__second-dot{
+    .reviews__second-dot{
         position: absolute;
         left: 50px;
         width: 10px;
@@ -1196,7 +1467,7 @@ div.section-about__footer-content h5{
         border-radius: 5px;
         border: 1px solid #86878B;
     }
-    .section-reviews__third-dot{
+    .reviews__third-dot{
         position: absolute;
         left: 100px;
         width: 10px;
@@ -1204,19 +1475,50 @@ div.section-about__footer-content h5{
         border-radius: 5px;
         border: 1px solid #86878B;
     }
-    #hidden-radio-2-first-item:checked ~ .section-reviews__dots .section-reviews__first-dot,
-    #hidden-radio-2-second-item:checked ~ .section-reviews__dots .section-reviews__second-dot,
-    #hidden-radio-2-third-item:checked ~ .section-reviews__dots .section-reviews__third-dot{
+    #hidden-radio-2-first-item:checked ~ .reviews__dots .reviews__first-dot,
+    #hidden-radio-2-second-item:checked ~ .reviews__dots .reviews__second-dot,
+    #hidden-radio-2-third-item:checked ~ .reviews__dots .reviews__third-dot{
         background-color: #86878B;
     }
-    #hidden-radio-2-first-item:checked ~ .section-reviews__employees-container #section-reviews__first-employee,
-    #hidden-radio-2-second-item:checked ~ .section-reviews__employees-container #section-reviews__second-employee,
-    #hidden-radio-2-third-item:checked ~ .section-reviews__employees-container #section-reviews__third-employee{
+    #hidden-radio-2-first-item:checked ~ .reviews__employees-container #reviews__first-employee,
+    #hidden-radio-2-second-item:checked ~ .reviews__employees-container #reviews__second-employee,
+    #hidden-radio-2-third-item:checked ~ .reviews__employees-container #reviews__third-employee{
         display: flex;
     }
-    #hidden-radio-2-first-item:checked ~ .section-reviews__text-bubbles #section-reviews__first-qoute,
-    #hidden-radio-2-second-item:checked ~ .section-reviews__text-bubbles #section-reviews__second-qoute,
-    #hidden-radio-2-third-item:checked ~ .section-reviews__text-bubbles #section-reviews__third-qoute{
+    #hidden-radio-2-first-item:checked ~ .reviews__text-bubbles #reviews__first-qoute,
+    #hidden-radio-2-second-item:checked ~ .reviews__text-bubbles #reviews__second-qoute,
+    #hidden-radio-2-third-item:checked ~ .reviews__text-bubbles #reviews__third-qoute{
         display: flex;
+    }
+    .banner-2__container{
+        max-width: 288px;
+        min-height: 358px;
+    }
+    .banner-2__header{
+        max-width: 288px;
+    }
+    .banner-2__button{
+        width: 287px;
+        height: 50px; 
+    }
+    .contact__container{
+        max-width: 288px;
+        min-height: 807px;
+    }
+    .contact__input-container{
+        max-width: 288px;
+    }
+    .contact__input{
+        max-width: 288px;
+        margin-left: 0;
+        min-height: 40px;
+        width: 100%;
+    }
+    .contact__input-container textarea{
+        position: static;
+    }
+    .contact__button{
+        width: 288px;
+        height: 50px;
     }
 }
