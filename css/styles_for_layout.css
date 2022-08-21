@@ -1,14 +1,127 @@
 @font-face {
     font-family:"Open Sans";
-    src: url(/fonts/Open_sans.ttf);
+    src: url(../fonts/Open_sans.ttf);
 }
 @font-face {
     font-family:"Raleway";
-    src: url(/fonts/Raleway.ttf);
+    src: url(../fonts/Raleway.ttf);
 }
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    margin: 0 auto;
+    background-color: #000000;
+}
+.header__container{
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header__logo{
+    transform: scale(70%);
+    width: 185px;
+}
+.header__nav-menu{
+    position: absolute;
+    right: 0;
+    width: 48%;
+    max-width: 570px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header__nav{
+    width: 115px;
+    text-decoration: none;
+    font-family: "Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.header__nav:hover{
+    border-bottom: 4px solid #FFFFFF;
+}
+.header__hamburger{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.header__bar{
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.header__bar::after, .header__bar::before{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+}
+.header__bar::after{
+    transform: translateY(15px);
+}
+.header__bar::before{
+    transform: translateY(30px);
+}
+.header__hamburger-menu.header__hamburger-menu-is-active ~ .header__hamburger .header__bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+.header__hamburger-menu.header__hamburger-menu-is-active ~ .header__hamburger .header__bar::after{
+    transform: translateY(0) rotate(-45deg);
+    top: 15px;
+}
+.header__hamburger-menu.header__hamburger-menu-is-active ~ .header__hamburger .header__bar::before{
+    transform: translateY(0) rotate(45deg);
+    top: 15px;
+}
+.header__hamburger-menu{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+    display: none;
+}
+.header__hamburger-nav{
+    width: 280px;
+    height: 67px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.header__hamburger-nav:active{
+    color:#e20f2f;
 }
 .banner{
     margin: 0 auto;
@@ -25,7 +138,7 @@
     top: 0;
     width: 100%;
     z-index: -1;
-    background-image: url("/images/street.png");
+    background-image: url("../images/street.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -161,7 +274,7 @@
     position: absolute;
     bottom: 0;
     background: #EC7979;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1092,6 +1205,19 @@ div.about__footer-content h5{
     color: rgba(255, 255, 255, 0.5);
 }
 @media(max-width : 1024px) {
+    .header__container{
+        max-width: 992px;
+    }
+    .header__logo{
+        transform: scale(60%);
+    }
+    .header__nav-menu{
+        width: 58%;
+        max-width: 570px;
+    }
+    .header__nav{
+        font-size: 14px;
+    }
     .banner{
         margin: 0 auto;
         height: 768px;
@@ -1508,7 +1634,39 @@ div.about__footer-content h5{
     }
     
 }
-@media (max-width : 428px) {
+@media (max-width : 520px) {
+    .header{
+        max-width: 520px;
+    }
+    .header__container{
+        max-width: 480px;
+        height: 56px;
+    }
+    .header__logo{
+        transform: scale(50%);
+    }
+    .header__nav-menu{
+        display: none;
+    }
+    .header__hamburger-menu{
+        position: absolute;
+        max-width: 520px;
+        top: 56px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__hamburger-menu-is-active{
+        display: flex;
+    }
+    .header__hamburger{
+        position: absolute;
+        right: 10vw;
+        top: 10px;
+        display: block;
+        cursor: pointer;
+    }
     .banner{
         height: 1005px;
     }

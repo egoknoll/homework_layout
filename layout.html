@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="css/styles_for_layout.css">
 </head>
 <body>
-    <section class="banner">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="images/AX.png" alt="AX">
+                <img src="images/IT.png" alt="IT">
+            </div>
+            <div class="header__nav-menu">
+                <a href="#banner" class="header__nav">Features</a>
+                <a href="#about" class="header__nav">About</a>
+                <a href="#pricing" class="header__nav">Pricing</a>
+                <a href="#reviews" class="header__nav">Reviews</a>
+                <a href="#contact" class="header__nav">Contact</a>
+            </div>
+            <div class="header__hamburger-container">
+                <div class="header__hamburger-menu">
+                    <a href="#banner" class="header__hamburger-nav">Features</a>
+                    <a href="#about" class="header__hamburger-nav">About</a>
+                    <a href="#pricing" class="header__hamburger-nav">Pricing</a>
+                    <a href="#reviews" class="header__hamburger-nav">Reviews</a>
+                    <a href="#contact" class="header__hamburger-nav">Contact</a>
+                </div>
+                <div class="header__hamburger">
+                    <div class="header__bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner" id="banner">
         <div class="banner__container">
             <div class="banner__content-left">
                 <div class="banner__logo">
@@ -65,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="tabs">
+    <section class="tabs" id="tabs">
         <div class="tabs__container">
             <input class="hidden-radio" id="hidden-radio-first-item" name="group-1" type="radio" checked>
             <input class="hidden-radio" id="hidden-radio-second-item" name="group-1" type="radio">
@@ -117,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container">
             <div class="about__header">
                 <h2 class="about__header-title">WHY THIS IS AWESOME
@@ -157,7 +184,7 @@
             </div>
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="pricing__container">
             <div class="pricing__header">
                 <h2 class="pricing__header-title">pricing options</h2>
@@ -202,7 +229,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="reviews__container">
             <input class="hidden-radio-2" id="hidden-radio-2-first-item" name="group-2" type="radio">
             <input class="hidden-radio-2" id="hidden-radio-2-second-item" name="group-2" type="radio" checked>
@@ -261,7 +288,7 @@
             <div class="banner-2__button">Download</div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__container">
             <div class="contact__header">
                 <h2 class="contact__header-title">contact us</h2>
@@ -306,4 +333,5 @@
         </div>
     </footer>
 </body>
+<script src="js/script_for_layout.js"></script>
 </html>
